@@ -20,14 +20,7 @@ export class AuthedRelationship extends Relationship.implementation {
       ...access,
     };
 
-    super(
-      path,
-      {
-        ...config,
-        access,
-      },
-      meta
-    );
+    super(path, { ...config, access }, meta);
 
     if (typeof this.defaultValue !== 'undefined') {
       throw new Error(

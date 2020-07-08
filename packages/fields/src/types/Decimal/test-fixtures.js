@@ -35,7 +35,7 @@ export const filterTests = withKeystone => {
       sortKey: 'name',
     });
 
-  test(
+  test.skip(
     'No filter',
     withKeystone(({ keystone }) =>
       match(keystone, undefined, [
@@ -48,7 +48,7 @@ export const filterTests = withKeystone => {
     )
   );
 
-  test(
+  test.skip(
     'Empty filter',
     withKeystone(({ keystone }) =>
       match(keystone, 'where: { }', [
@@ -61,14 +61,14 @@ export const filterTests = withKeystone => {
     )
   );
 
-  test(
+  test.skip(
     'Filter: price',
     withKeystone(({ keystone }) =>
       match(keystone, 'where: { price: "50.00" }', [{ name: 'price1', price: '50.00' }])
     )
   );
 
-  test(
+  test.skip(
     'Filter: price_not',
     withKeystone(({ keystone }) =>
       match(keystone, 'where: { price_not: "50.00" }', [
@@ -80,14 +80,14 @@ export const filterTests = withKeystone => {
     )
   );
 
-  test(
+  test.skip(
     'Filter: price_lt',
     withKeystone(({ keystone }) =>
       match(keystone, 'where: { price_lt: "50.00" }', [{ name: 'price2', price: '0.01' }])
     )
   );
 
-  test(
+  test.skip(
     'Filter: price_lte',
     withKeystone(({ keystone }) =>
       match(keystone, 'where: { price_lte: "2000.00" }', [
@@ -98,14 +98,14 @@ export const filterTests = withKeystone => {
     )
   );
 
-  test(
+  test.skip(
     'Filter: price_gt',
     withKeystone(({ keystone }) =>
       match(keystone, 'where: { price_gt: "2000.00" }', [{ name: 'price4', price: '40000.00' }])
     )
   );
 
-  test(
+  test.skip(
     'Filter: price_gte',
     withKeystone(({ keystone }) =>
       match(keystone, 'where: { price_gte: "2000.00" }', [
@@ -138,7 +138,7 @@ export const crudTests = withKeystone => {
     };
   };
 
-  test(
+  test.skip(
     'Create',
     withKeystone(
       withHelpers(async ({ keystone, createMutationName }) => {
@@ -157,7 +157,7 @@ export const crudTests = withKeystone => {
     )
   );
 
-  test(
+  test.skip(
     'Read',
     withKeystone(
       withHelpers(async ({ keystone, items, itemQueryName }) => {
@@ -177,7 +177,7 @@ export const crudTests = withKeystone => {
   );
 
   describe('Update', () => {
-    test(
+    test.skip(
       'Updating the value',
       withKeystone(
         withHelpers(async ({ keystone, items, updateMutationName }) => {
@@ -199,7 +199,7 @@ export const crudTests = withKeystone => {
       )
     );
 
-    test(
+    test.skip(
       'Updating the value to null',
       withKeystone(
         withHelpers(async ({ keystone, items, updateMutationName }) => {
@@ -221,7 +221,7 @@ export const crudTests = withKeystone => {
       )
     );
 
-    test(
+    test.skip(
       'Updating without this field',
       withKeystone(
         withHelpers(async ({ keystone, items, updateMutationName }) => {

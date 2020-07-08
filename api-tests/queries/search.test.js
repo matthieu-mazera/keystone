@@ -107,7 +107,7 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
       })
     );
 
-    test(
+    test.skip(
       'users - numbers',
       runner(setupKeystone, async ({ keystone }) => {
         const create = async (listKey, item) => createItem({ keystone, listKey, item });

@@ -2,6 +2,7 @@ import {
   DateTimeUtcImplementation,
   MongoDateTimeUtcInterface,
   KnexDateTimeUtcInterface,
+  PrismaDateTimeUtcInterface,
 } from './Implementation';
 import { DateTime } from '@keystonejs/fields';
 
@@ -17,5 +18,6 @@ export const DateTimeUtc = {
   adapters: {
     mongoose: MongoDateTimeUtcInterface,
     knex: KnexDateTimeUtcInterface,
+    prisma: PrismaDateTimeUtcInterface,
   },
 };

@@ -304,7 +304,7 @@ Update multiple items.
 #### Usage
 
 ```js
-const { updateItems } =  require('@keystonejs/server-side-graphql-client')
+const { updateItems } = require('@keystonejs/server-side-graphql-client');
 
 keystone.createList('User', {
   fields: {
@@ -313,20 +313,20 @@ keystone.createList('User', {
   },
 });
 
-const updateUsers = async (updateUsers) => {
+const updateUsers = async updateUsers => {
   const users = await updateItems({
     keystone,
     listKey: 'User',
     items: updateUsers,
-    returnFields: 'name'
+    returnFields: 'name',
   });
 
   console.log(users); // [{name: 'newName1'}, {name: 'newName2'}]
-}
+};
 
 updateUsers([
   { id: '123', data: { name: 'newName1' } },
-  { id: '456', data: { name: 'newName2' } }
+  { id: '456', data: { name: 'newName2' } },
 ]);
 ```
 

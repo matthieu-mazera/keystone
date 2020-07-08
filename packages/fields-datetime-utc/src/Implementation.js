@@ -1,6 +1,8 @@
+import { formatISO } from 'date-fns';
 import { DateTime } from 'luxon';
 import { Implementation } from '@keystonejs/fields';
 import { KnexFieldAdapter } from '@keystonejs/adapter-knex';
+import { PrismaFieldAdapter } from '@keystonejs/adapter-prisma';
 import { MongooseFieldAdapter } from '@keystonejs/adapter-mongoose';
 
 export class DateTimeUtcImplementation extends Implementation {
@@ -87,5 +89,45 @@ export class KnexDateTimeUtcInterface extends KnexFieldAdapter {
       ...this.orderingConditions(dbPath, toDate),
       ...this.inConditions(dbPath, toDate),
     };
+  }
+}
+
+export class PrismaDateTimeUtcInterface extends PrismaFieldAdapter {
+  constructor() {
+    super(...arguments);
+    this.isUnique = !!this.config.isUnique;
+    this.isIndexed = !!this.config.isIndexed && !this.config.isUnique;
+  }
+
+  getPrismaSchema() {
+    return [this._schemaField({ type: 'DateTime' })];
+  }
+
+  _stringToDate(s) {
+    return s && new Date(s);
+  }
+
+  getQueryConditions(dbPath) {
+    return {
+      ...this.equalityConditions(dbPath, this._stringToDate),
+      ...this.orderingConditions(dbPath, this._stringToDate),
+      ...this.inConditions(dbPath, this._stringToDate),
+    };
+  }
+
+  setupHooks({ addPreSaveHook, addPostReadHook }) {
+    addPreSaveHook(item => {
+      if (item[this.path]) {
+        item[this.path] = this._stringToDate(item[this.path]);
+      }
+      return item;
+    });
+
+    addPostReadHook(item => {
+      if (item[this.path]) {
+        item[this.path] = formatISO(item[this.path]);
+      }
+      return item;
+    });
   }
 }
