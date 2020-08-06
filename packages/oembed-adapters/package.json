@@ -1,7 +1,7 @@
 {
   "name": "@keystonejs/oembed-adapters",
   "description": "Adapters for fetching oEmbed data for the OEmbed field type",
-  "version": "5.1.4",
+  "version": "5.1.5",
   "main": "dist/oembed-adapters.cjs.js",
   "module": "dist/oembed-adapters.esm.js",
   "repository": "https://github.com/keystonejs/keystone/tree/master/packages/oembed-adapters",
@@ -24,6 +24,9 @@
     "react": "^16.13.1"
   },
   "preconstruct": {
-    "entrypoints": ["index.js", "views/preview.js"]
+    "entrypoints": [
+      "index.js",
+      "views/preview.js"
+    ]
   }
 }

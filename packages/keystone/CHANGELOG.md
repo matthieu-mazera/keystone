@@ -1,5 +1,14 @@
 # @keystonejs/keystone
 
+## 13.0.1
+
+### Patch Changes
+
+- [`7650ecd3e`](https://github.com/keystonejs/keystone/commit/7650ecd3e60b52983015ac0058b8b0066b074e1e) [#3331](https://github.com/keystonejs/keystone/pull/3331) Thanks [@Vultraz](https://github.com/Vultraz)! - Import gql literal from Apollo server.
+
+- Updated dependencies [[`694f3acfb`](https://github.com/keystonejs/keystone/commit/694f3acfb9faa78aebfcf48cf711165560f16ff7)]:
+  - @keystonejs/fields@15.1.0
+
 ## 13.0.0
 
 ### Major Changes

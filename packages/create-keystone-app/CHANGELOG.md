@@ -1,5 +1,11 @@
 # create-keystone-app
 
+## 3.2.4
+
+### Patch Changes
+
+- [`b7f669588`](https://github.com/keystonejs/keystone/commit/b7f669588c739610cd36c17a41a6cecaae6d304d) [#3341](https://github.com/keystonejs/keystone/pull/3341) Thanks [@Noviny](https://github.com/Noviny)! - Fix issue where access controls blocked creating initial user and add better error handling if this fails
+
 ## 3.2.3
 
 ### Patch Changes

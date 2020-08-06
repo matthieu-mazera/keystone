@@ -1,5 +1,22 @@
 # @keystonejs/api-tests
 
+## 7.0.1
+
+### Patch Changes
+
+- [`d4f28f123`](https://github.com/keystonejs/keystone/commit/d4f28f123ce85f3cb3334f53695aca3db03218f9) [#3326](https://github.com/keystonejs/keystone/pull/3326) Thanks [@timleslie](https://github.com/timleslie)! - Replaced calls to `graphqlRequest` with calls to `keystone.executeGraphQL`.
+
+* [`4cadbb2a9`](https://github.com/keystonejs/keystone/commit/4cadbb2a95ce275c22fe7248fd44a5cbc6df6904) [#3313](https://github.com/keystonejs/keystone/pull/3313) Thanks [@timleslie](https://github.com/timleslie)! - Updated tests to make use of `createItem` and `createItems`.
+
+- [`f69db4fdc`](https://github.com/keystonejs/keystone/commit/f69db4fdcda05328020d876f3987730cbe95a31f) [#3328](https://github.com/keystonejs/keystone/pull/3328) Thanks [@timleslie](https://github.com/timleslie)! - Uses `deleteItem` to delete items in tests.
+
+* [`eb8bd6679`](https://github.com/keystonejs/keystone/commit/eb8bd66799c454bdbd0933ff7a91f592ccf22da9) [#3329](https://github.com/keystonejs/keystone/pull/3329) Thanks [@timleslie](https://github.com/timleslie)! - Uses `updateItems` to update items in tests.
+
+* Updated dependencies [[`694f3acfb`](https://github.com/keystonejs/keystone/commit/694f3acfb9faa78aebfcf48cf711165560f16ff7), [`7650ecd3e`](https://github.com/keystonejs/keystone/commit/7650ecd3e60b52983015ac0058b8b0066b074e1e), [`ed2f8c31b`](https://github.com/keystonejs/keystone/commit/ed2f8c31b13eadb39a045cc351777add81621ede)]:
+  - @keystonejs/fields@15.1.0
+  - @keystonejs/keystone@13.0.1
+  - @keystonejs/server-side-graphql-client@1.1.0
+
 ## 7.0.0
 
 ### Major Changes

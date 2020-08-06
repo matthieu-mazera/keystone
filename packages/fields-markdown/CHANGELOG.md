@@ -1,5 +1,14 @@
 # @keystonejs/fields-markdown
 
+## 5.2.4
+
+### Patch Changes
+
+- [`356dd27da`](https://github.com/keystonejs/keystone/commit/356dd27dab4ee6c89a9381dc92eef9534db52fc0) [#3342](https://github.com/keystonejs/keystone/pull/3342) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Expose Field view at `@keystonejs/fields-markdown/views/Field`.
+
+- Updated dependencies [[`694f3acfb`](https://github.com/keystonejs/keystone/commit/694f3acfb9faa78aebfcf48cf711165560f16ff7)]:
+  - @keystonejs/fields@15.1.0
+
 ## 5.2.3
 
 ### Patch Changes

@@ -1,5 +1,20 @@
 # @keystonejs/app-admin-ui
 
+## 7.3.0
+
+### Minor Changes
+
+- [`694f3acfb`](https://github.com/keystonejs/keystone/commit/694f3acfb9faa78aebfcf48cf711165560f16ff7) [#3125](https://github.com/keystonejs/keystone/pull/3125) Thanks [@Vultraz](https://github.com/Vultraz)! - Migrated to Apollo Client v3.
+
+### Patch Changes
+
+- [`318e39b74`](https://github.com/keystonejs/keystone/commit/318e39b74b2fa3152d4ff09bccec93238e8345ef) [#3343](https://github.com/keystonejs/keystone/pull/3343) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Force all imports of `@apollo/client` in the Admin UI to use the copy of `@apollo/client` that is a dependency of `@keystonejs/app-admin-ui`. This resolves issues if `@apollo/client` resolves to a different copy of `@apollo/client` in a field view.
+
+* [`b0af7d5ba`](https://github.com/keystonejs/keystone/commit/b0af7d5baa6ceea8d80215afa290fd76240ee823) [#3317](https://github.com/keystonejs/keystone/pull/3317) Thanks [@singhArmani](https://github.com/singhArmani)! - Alerted the user before canceling the createItemModal form.
+
+* Updated dependencies [[`694f3acfb`](https://github.com/keystonejs/keystone/commit/694f3acfb9faa78aebfcf48cf711165560f16ff7)]:
+  - @keystonejs/fields@15.1.0
+
 ## 7.2.0
 
 ### Minor Changes

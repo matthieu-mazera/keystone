@@ -1,5 +1,15 @@
 # @keystonejs/list-plugins
 
+## 7.0.5
+
+### Patch Changes
+
+- [`7f17cb22f`](https://github.com/keystonejs/keystone/commit/7f17cb22f2ad49d3e5110f68cbb29447a16aa7a7) [#3332](https://github.com/keystonejs/keystone/pull/3332) Thanks [@MadeByMike](https://github.com/MadeByMike)! - Added tests to tracking plugin and fixed a bug where the 'update' operation was sometimes not setting the value of the `updatedBy` field.
+
+- Updated dependencies [[`694f3acfb`](https://github.com/keystonejs/keystone/commit/694f3acfb9faa78aebfcf48cf711165560f16ff7), [`356dd27da`](https://github.com/keystonejs/keystone/commit/356dd27dab4ee6c89a9381dc92eef9534db52fc0)]:
+  - @keystonejs/fields@15.1.0
+  - @keystonejs/fields-authed-relationship@1.0.10
+
 ## 7.0.4
 
 ### Patch Changes

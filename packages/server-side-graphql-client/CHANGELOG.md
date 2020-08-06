@@ -1,5 +1,22 @@
 # @keystonejs/server-side-graphql-client
 
+## 1.1.0
+
+### Minor Changes
+
+- [`ed2f8c31b`](https://github.com/keystonejs/keystone/commit/ed2f8c31b13eadb39a045cc351777add81621ede) [#3345](https://github.com/keystonejs/keystone/pull/3345) Thanks [@singhArmani](https://github.com/singhArmani)! - Enhanced the `getItems` functionality by adding:
+
+  - `sortBy`
+  - `first`
+  - `skip`
+
+  These variable are part of the public interface, and allow users to achieve some advance use cases like sorting and skipping.
+
+### Patch Changes
+
+- Updated dependencies [[`694f3acfb`](https://github.com/keystonejs/keystone/commit/694f3acfb9faa78aebfcf48cf711165560f16ff7)]:
+  - @keystonejs/fields@15.1.0
+
 ## 1.0.0
 
 ### Major Changes

@@ -1,5 +1,16 @@
 # @keystonejs/fields-mongoid
 
+## 6.0.4
+
+### Patch Changes
+
+- [`356dd27da`](https://github.com/keystonejs/keystone/commit/356dd27dab4ee6c89a9381dc92eef9534db52fc0) [#3342](https://github.com/keystonejs/keystone/pull/3342) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Expose Field and Controller views at `@keystonejs/fields-mongoid/views/Field` and `@keystonejs/fields-mongoid/views/Controller`.
+
+* [`356dd27da`](https://github.com/keystonejs/keystone/commit/356dd27dab4ee6c89a9381dc92eef9534db52fc0) [#3342](https://github.com/keystonejs/keystone/pull/3342) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Change build system from @keystonejs/build-field-types to Preconstruct
+
+* Updated dependencies [[`694f3acfb`](https://github.com/keystonejs/keystone/commit/694f3acfb9faa78aebfcf48cf711165560f16ff7)]:
+  - @keystonejs/fields@15.1.0
+
 ## 6.0.3
 
 ### Patch Changes

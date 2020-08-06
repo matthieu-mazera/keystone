@@ -1,5 +1,13 @@
 # @keystonejs/oembed-adapters
 
+## 5.1.5
+
+### Patch Changes
+
+- [`356dd27da`](https://github.com/keystonejs/keystone/commit/356dd27dab4ee6c89a9381dc92eef9534db52fc0) [#3342](https://github.com/keystonejs/keystone/pull/3342) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Expose preview component at `@keystonejs/oembed-adapters/views/preview`
+
+* [`356dd27da`](https://github.com/keystonejs/keystone/commit/356dd27dab4ee6c89a9381dc92eef9534db52fc0) [#3342](https://github.com/keystonejs/keystone/pull/3342) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Change build system from @keystonejs/build-field-types to Preconstruct
+
 ## 5.1.4
 
 ### Patch Changes
